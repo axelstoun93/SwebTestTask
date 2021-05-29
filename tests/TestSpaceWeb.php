@@ -1,6 +1,6 @@
 <?php
 
-require_once '../autoload.php';
+require_once '../vendor/autoload.php';
 
 use PHPUnit\Framework\TestCase;
 use SpaceWeb\Data\SpaceWebResponseInterface;
@@ -13,9 +13,9 @@ class TestSpaceWeb extends TestCase
     private string $login = 'spacewebap';
     private string $password = 'HZq9MRwyj';
 
-    public function __construct(?string $name = null, array $data = [], $dataName = '')
+    protected function setUp(): void
     {
-        parent::__construct($name, $data, $dataName);
+        parent::setUp();
         $this->spaceWeb = new SpaceWeb();
     }
 
