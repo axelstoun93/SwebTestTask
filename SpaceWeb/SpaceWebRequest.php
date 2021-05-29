@@ -18,14 +18,14 @@ class SpaceWebRequest implements SpaceWebRequestInterface
     public $jsonrpc = '2.0';
 
     /**
-     * Текущая версия приложения, используется для обеспечения совместимости с Back-End
+     * Текущая версия приложения используется для обеспечения совместимости с Back-End
      * @var string
      */
     public $version = '1.74.20210524153627';
 
     /**
      * Публичный метод объекта
-     * по-умолчанию для всех объектов "index".
+     * по умолчанию для всех объектов "index".
      * @var string
      */
     public $method = 'index';
@@ -99,7 +99,7 @@ class SpaceWebRequest implements SpaceWebRequestInterface
     }
 
     /**
-     * Устанавливает версия Front End приложения
+     * Устанавливает версия Front-End приложения
      * @param string $version
      */
     public function setVersion(string $version)

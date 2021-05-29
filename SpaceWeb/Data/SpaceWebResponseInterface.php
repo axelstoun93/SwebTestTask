@@ -11,14 +11,14 @@ interface SpaceWebResponseInterface
 {
 
     /**
-     * Возвращаяет версия JSON-RPC
+     * Возвращает версия JSON-RPC
      * @param string $jsonRPC
      * @return string
      */
     public function getJsonRPC(string $jsonRPC): string;
 
     /**
-     * Возвращаяет текущая версия приложения
+     * Возвращает текущая версия приложения
      * @param string $version
      * @return string
      */
@@ -31,7 +31,8 @@ interface SpaceWebResponseInterface
     public function getResult();
 
     /**
-     * Запрос успешно отработал но вернул ответ с ошибками
+     * Запрос успешно отработал,
+     * но вернул ответ с ошибками
      * @return bool
      */
     public function isErrorResponse(): bool;

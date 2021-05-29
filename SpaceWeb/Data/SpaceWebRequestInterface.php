@@ -2,6 +2,11 @@
 
 namespace SpaceWeb\Data;
 
+/**
+ * Интерфейс объекта запроса
+ * Interface SpaceWebRequestInterface
+ * @package SpaceWeb\Data
+ */
 interface SpaceWebRequestInterface {
 
     /**
@@ -25,7 +30,7 @@ interface SpaceWebRequestInterface {
     public function setUser(string $user);
 
     /**
-     * Устанавливает версию Front End приложения
+     * Устанавливает версию Front-End приложения
      * @param string $version
      */
     public function setVersion(string $version);

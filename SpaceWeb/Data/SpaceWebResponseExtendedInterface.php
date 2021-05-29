@@ -17,14 +17,14 @@ interface SpaceWebResponseExtendedInterface
     public function getCode(): string;
 
     /**
-     * кастомизированное сообщение о результате
-     * @return array
+     *  Объект дополнительных данных (может быть пустым)
+     * @return string
      */
     public function getData(): array;
 
     /**
-     *  объект дополнительных данных (может быть пустым)
-     * @return string
+     * Кастомизированное сообщение о результате
+     * @return array
      */
     public function getMessage(): string;
 }

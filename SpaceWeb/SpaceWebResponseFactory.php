@@ -11,7 +11,7 @@ class SpaceWebResponseFactory
 {
 
     /**
-     * Возвращаяет объект ответа
+     * Возвращает объект ответа
      * @param array $response
      * @return SpaceWebResponse|SpaceWebResponseExtended
      */

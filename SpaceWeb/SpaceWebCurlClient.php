@@ -93,7 +93,7 @@ class SpaceWebCurlClient
     }
 
     /**
-     * Метод отпровляет запрос
+     * Метод отправляет запрос
      * @return array
      * @throws SpaceWebCurlException
      */
@@ -217,7 +217,7 @@ class SpaceWebCurlClient
     }
 
     /**
-     * Метод возвращяет url строку
+     * Метод возвращает url строку
      * @return string
      */
     private function getUrl()
@@ -226,7 +226,7 @@ class SpaceWebCurlClient
     }
 
     /**
-     * Метод подготаливает
+     * Метод подготавливает
      * данные перед запросом
      * @param $request
      * @param $headers

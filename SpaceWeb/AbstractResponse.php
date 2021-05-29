@@ -24,7 +24,8 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
     public $jsonrpc;
 
     /**
-     * Текущая версия приложения, используется для обеспечения совместимости с Back-End
+     * Текущая версия приложения используется для
+     * обеспечения совместимости с Back-End
      * @var
      */
     public $version;
@@ -80,7 +81,7 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
     }
 
     /**
-     * Запрос успешно отработал но вернул ответ с ошибками
+     * Запрос успешно отработал, но вернул ответ с ошибками
      * @return bool
      */
     public function isErrorResponse():bool
@@ -98,7 +99,7 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
     }
 
     /**
-     * Возвращаяет версия JSON-RPC
+     * Возвращает версия JSON-RPC
      * @param string $jsonRPC
      * @return string
      */
@@ -108,7 +109,7 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
     }
 
     /**
-     * Возвращаяет текущая версия приложения
+     * Возвращает текущая версия приложения
      * @param string $version
      * @return string
      */
