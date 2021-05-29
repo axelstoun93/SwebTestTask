@@ -1,1 +1,0 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":173:{a:2:{s:7:"defects";a:1:{s:27:"TestSpaceWeb::testAddDomain";i:3;}s:5:"times";a:2:{s:31:"TestSpaceWeb::testAuthorisation";d:0.374;s:27:"TestSpaceWeb::testAddDomain";d:2.095;}}}
