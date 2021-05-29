@@ -1,12 +1,12 @@
 {
   "name": "vendor_name/sweb",
-  "description": "description",
+  "description": "Test task SpaceWeb",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "User",
-      "email": "email@example.com"
+      "name": "Stone",
+      "email": "axelstoun@mail.ru"
     }
   ],
   "require": {
