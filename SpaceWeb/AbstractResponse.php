@@ -105,7 +105,7 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
      */
     public function getJsonRPC(string $jsonRPC): string
     {
-        // TODO: Implement getJsonRPC() method.
+        return $this->jsonrpc;
     }
 
     /**
@@ -115,7 +115,7 @@ abstract class AbstractResponse implements SpaceWebResponseInterface
      */
     public function getVersion(string $version): string
     {
-        // TODO: Implement getVersion() method.
+        return $this->version;
     }
 
     /**
