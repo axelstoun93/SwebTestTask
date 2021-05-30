@@ -97,7 +97,7 @@ class SpaceWebCurlClient
      * @return array
      * @throws SpaceWebCurlException
      */
-    public function sendRequest()
+    public function sendRequest(): array
     {
         $response = curl_exec($this->curl);
         $httpHeaderSize = curl_getinfo($this->curl, CURLINFO_HEADER_SIZE);
@@ -117,7 +117,7 @@ class SpaceWebCurlClient
      * @param array $headers
      * @return array
      */
-    private function prepareHeaders(array $headers)
+    private function prepareHeaders(array $headers): array
     {
         $headers = array_merge($this->defaultHeaders, $headers);
 
@@ -152,7 +152,7 @@ class SpaceWebCurlClient
      * @param $optionValue
      * @return bool
      */
-    public function setCurlOption($optionName,$optionValue)
+    public function setCurlOption($optionName, $optionValue): bool
     {
         return curl_setopt($this->curl, $optionName, $optionValue);
     }
@@ -162,7 +162,7 @@ class SpaceWebCurlClient
      * для использования в запросах
      * @param string $token
      */
-    public function setBearerToken(string $token)
+    public function setBearerToken(string $token): void
     {
         $this->bearerToken = $token;
     }
@@ -187,7 +187,7 @@ class SpaceWebCurlClient
      * Метод закрывать
      * curl соединение
      */
-    public function closeCurlConnection()
+    public function closeCurlConnection(): void
     {
         if ($this->curl !== null) {
             curl_close($this->curl);
@@ -199,7 +199,7 @@ class SpaceWebCurlClient
      * в тело запроса
      * @param $request
      */
-    public function setBody($request)
+    public function setBody($request): void
     {
         if (!empty($request)) {
             $this->setCurlOption(CURLOPT_POSTFIELDS, $request->toJson());
@@ -211,7 +211,7 @@ class SpaceWebCurlClient
      * @param $path
      * @return string
      */
-    private function prepareUrl($path)
+    private function prepareUrl($path): string
     {
         return $this->getUrl() . $path;
     }
@@ -220,7 +220,7 @@ class SpaceWebCurlClient
      * Метод возвращает url строку
      * @return string
      */
-    private function getUrl()
+    private function getUrl(): string
     {
         return $this->url;
     }
@@ -233,7 +233,7 @@ class SpaceWebCurlClient
      * @param $url
      * @throws \Exception
      */
-    private function prepareCurl($request, $headers, $url)
+    private function prepareCurl($request, $headers, $url): void
     {
         $this->initCurl();
 
